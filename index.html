@@ -1,162 +1,45 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reub Sales | Virtual Assistant</title><style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #101827;
-    color: #ffffff;
-    line-height: 1.7;
-}
-
-header {
-    padding: 22px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0b1220;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #60a5fa;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 18px;
-}
-
-nav a:hover {
-    color: #60a5fa;
-}
-
-.hero {
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px 10%;
-}
-
-.hero h1 {
-    font-size: 46px;
-    margin-bottom: 10px;
-}
-
-.hero h1 span {
-    color: #60a5fa;
-}
-
-.hero p {
-    max-width: 600px;
-    color: #cbd5e1;
-    margin: 15px 0 25px;
-}
-
-.button {
-    display: inline-block;
-    background: #3b82f6;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 6px;
-    width: fit-content;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #2563eb;
-}
-
-section {
-    padding: 75px 10%;
-}
-
-section h2 {
-    color: #60a5fa;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #60a5fa;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #93c5fd;
-}
-
-.card p {
-    color: #cbd5e1;
-}
-
-.card .button {
-    margin-top: 15px;
-    padding: 10px 18px;
-    font-size: 14px;
-}
-
-section p {
-    color: #cbd5e1;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #0b1220;
-    color: #94a3b8;
-}
-
+<title>Reub Sales | Virtual Assistant</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: #101827; color: #ffffff; line-height: 1.7; }
+header { padding: 22px 8%; display: flex; justify-content: space-between; align-items: center; background: #0b1220; }
+.logo { font-size: 22px; font-weight: bold; color: #60a5fa; }
+nav a { color: white; text-decoration: none; margin-left: 18px; }
+nav a:hover { color: #60a5fa; }
+.hero { min-height: 75vh; display: flex; flex-direction: column; justify-content: center; padding: 60px 10%; }
+.hero h1 { font-size: 46px; margin-bottom: 10px; }
+.hero h1 span { color: #60a5fa; }
+.hero p { max-width: 600px; color: #cbd5e1; margin: 15px 0 25px; }
+.button { display: inline-block; background: #3b82f6; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; width: fit-content; transition: 0.3s; }
+.button:hover { background: #2563eb; }
+section { padding: 75px 10%; }
+section h2 { color: #60a5fa; font-size: 30px; margin-bottom: 20px; }
+.card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card { background: #1e293b; padding: 25px; border-radius: 10px; border: 1px solid #334155; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); border-color: #60a5fa; }
+.card h3 { margin-bottom: 10px; color: #93c5fd; }
+.card p, section p { color: #cbd5e1; }
+.card .button { margin-top: 16px; padding: 10px 18px; font-size: 14px; }
+.portfolio-intro { margin-bottom: 25px; }
+.contact-link { color: #93c5fd; text-decoration: none; }
+.contact-link:hover { text-decoration: underline; }
+footer { text-align: center; padding: 25px; background: #0b1220; color: #94a3b8; }
 @media(max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    nav a {
-        margin: 0 6px;
-        font-size: 13px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    section {
-        padding: 55px 7%;
-    }
+    header { flex-direction: column; gap: 12px; }
+    nav a { margin: 0 6px; font-size: 13px; }
+    .hero h1 { font-size: 34px; }
+    section { padding: 55px 7%; }
 }
-</style></head><body><header>
+</style>
+</head>
+<body>
+<header>
     <div class="logo">REUB SALES</div>
     <nav>
         <a href="#about">About</a>
@@ -164,99 +47,64 @@ footer {
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
-</header><div class="hero">
+</header>
+
+<div class="hero">
     <h1>Hello, I'm <span>Reub Sales.</span></h1>
     <h2>Virtual Assistant | Customer Support</h2>
-    <p>
-        I help businesses stay organized through customer communication,
-        administrative assistance, and digital support.
-    </p>
+    <p>I help businesses stay organized through customer communication, administrative assistance, and digital support.</p>
     <a href="#contact" class="button">Contact Me</a>
-</div><section id="about">
+</div>
+
+<section id="about">
     <h2>About Me</h2>
-    <p>
-        I'm a second-year Bachelor of Science in Computer Science student.
-        I'm interested in customer support, administrative assistance,
-        and technology. I'm continuously developing my skills to provide
-        reliable and professional support to clients.
-    </p>
-</section><section id="services">
+    <p>I'm a second-year Bachelor of Science in Computer Science student. I'm interested in customer support, administrative assistance, and technology. I'm continuously developing my skills to provide reliable and professional support to clients.</p>
+</section>
+
+<section id="services">
     <h2>My Services</h2>
-    <div class="card-container">    <div class="card">
-        <h3>Customer Support</h3>
-        <p>Professional customer communication and inquiry assistance.</p>
+    <div class="card-container">
+        <div class="card"><h3>Customer Support</h3><p>Professional customer communication and inquiry assistance.</p></div>
+        <div class="card"><h3>Email Management</h3><p>Organizing emails and preparing professional responses.</p></div>
+        <div class="card"><h3>Data Entry</h3><p>Accurate data organization and spreadsheet management.</p></div>
+        <div class="card"><h3>Appointment Scheduling</h3><p>Helping organize appointments and schedules.</p></div>
     </div>
+</section>
 
-    <div class="card">
-        <h3>Email Management</h3>
-        <p>Organizing emails and preparing professional responses.</p>
-    </div>
-
-    <div class="card">
-        <h3>Data Entry</h3>
-        <p>Accurate data organization and spreadsheet management.</p>
-    </div>
-
-    <div class="card">
-        <h3>Appointment Scheduling</h3>
-        <p>Helping organize appointments and schedules.</p>
-    </div>
-
-</div>
-
-</section><section id="portfolio">
+<section id="portfolio">
     <h2>My Portfolio</h2>
-    <p style="margin-bottom: 25px;">
-        Here are some sample projects demonstrating my skills in
-        customer support, email management, and data organization.
-    </p><div class="card-container">
-
-    <div class="card">
-        <h3>Customer Support</h3>
-        <p>
-            A sample customer support project demonstrating
-            professional communication, handling inquiries,
-            and preparing helpful customer responses.
-        </p>
-        <a href="customer-support.pdf" class="button" target="_blank">View Sample</a>
+    <p class="portfolio-intro">These sample projects demonstrate my approach to customer communication, organization, and administrative support. All examples use fictional information.</p>
+    <div class="card-container">
+        <div class="card">
+            <h3>Customer Support</h3>
+            <p>Sample customer inquiries and professional responses demonstrating clear communication and helpful service.</p>
+            <a href="customer-support.pdf" class="button" target="_blank" rel="noopener">View Sample</a>
+        </div>
+        <div class="card">
+            <h3>Email Management</h3>
+            <p>A sample inbox workflow showing email categorization, follow-ups, and professional response writing.</p>
+            <a href="email-management.pdf" class="button" target="_blank" rel="noopener">View Sample</a>
+        </div>
+        <div class="card">
+            <h3>Data Entry & Google Sheets</h3>
+            <p>A sample spreadsheet with organized fictional records, status tracking, and follow-up fields.</p>
+            <a href="data-entry-sample.xlsx" class="button" target="_blank" rel="noopener">View Sample</a>
+        </div>
+        <div class="card">
+            <h3>Appointment Scheduling</h3>
+            <p>A sample appointment tracker demonstrating schedule organization and status monitoring.</p>
+            <a href="appointment-scheduling.pdf" class="button" target="_blank" rel="noopener">View Sample</a>
+        </div>
     </div>
+</section>
 
-    <div class="card">
-        <h3>Email Management</h3>
-        <p>
-            A sample email management project showcasing
-            inbox organization, email categorization,
-            and professional email writing.
-        </p>
-        <a href="email-management.pdf" class="button" target="_blank">View Sample</a>
-    </div>
-
-    <div class="card">
-        <h3>Data Entry & Google Sheets</h3>
-        <p>
-            A sample spreadsheet project demonstrating
-            organized data entry, record keeping,
-            and basic spreadsheet management.
-        </p>
-        <a href="https://docs.google.com/spreadsheets/" class="button" target="_blank">View Sample</a>
-    </div>
-
-    <div class="card">
-        <h3>Appointment Scheduling</h3>
-        <p>
-            A sample scheduling project demonstrating
-            appointment organization, calendar management,
-            and schedule tracking.
-        </p>
-        <a href="https://calendar.google.com/" class="button" target="_blank">View Sample</a>
-    </div>
-
-</div>
-
-</section><section id="contact">
+<section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: YOUR-PROFESSIONAL-EMAIL@gmail.com</p>
-</section><footer>
+    <p>Email: <a class="contact-link" href="mailto:salesreublhiam@gmail.com">salesreublhiam@gmail.com</a></p>
+</section>
+
+<footer>
     <p>© 2026 Reub Lhiam Sales | Virtual Assistant Portfolio</p>
-</footer></body>
+</footer>
+</body>
 </html>
